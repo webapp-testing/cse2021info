@@ -1,1 +1,59 @@
-   <!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="ie=edge"><title>CSE Form</title><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"><link rel="stylesheet" href="css/styles.css"></head><body class="bg"><div id="cover-caption" class="vertical-center"><div class="container"><div class="row text-white"><div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4"> <h1 class="display-4 py-2 text-truncate">Enter Details</h1> <div class="px-2"><form action="" class="justify-content-center" onsubmit="return false"> <div class="form-group"><label class="sr-only">University-Roll</label> <input id ="urn" type="text" name="ur" class="form-control" placeholder="University Roll Number" maxlength="11" size="11"></div><div class="form-group"> <label class="sr-only">Pin-Code</label> <input id="pcn" type="text" name="pc" class="form-control" placeholder="Pin Code" maxlength="6" size="6"></div><button id ="myBtn" type="submit" onClick="valCan(ur.value, pc.value)"  class="btn btn-primary btn-lg">Enter</button></form></div></div></div></div></div><div id="myModal" class="modal"><div class="container"><div class="modal-content"><span class="close">&times;</span><center><p>Welcome</p><p id="p1"></p><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHnSY5UKpLI4xTRQAY3LtjaNVO01BVrsmphxQUKPUdZ7MYag/viewform?embedded=true" width="640" height="670" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe></center></div></div></div><script src="scripts/min.js"></script><script>document.addEventListener("contextmenu", function(e){e.preventDefault();}, false);</script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg">
+
+    <div id="cover-caption" class="vertical-center">
+        <div class="container">
+            <div class="row text-white">
+                <div class="col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto text-center form p-4">
+                    <h1 class="display-4 py-2 text-truncate">Enter Details</h1>
+                    <div class="px-2">
+                        <form action="" class="justify-content-center" onsubmit="return false">
+                            <div class="form-group">
+                                <label class="sr-only">University-Roll</label>
+                                <input id ="urn" type="text" name="ur" class="form-control" placeholder="University Roll Number" maxlength="11" size="11">
+                            </div>
+                            <div class="form-group">
+                                <label class="sr-only">Pin-Code</label>
+                                <input id="pcn" type="text" name="pc" class="form-control" placeholder="Pin Code" maxlength="6" size="6">
+                            </div>
+                           <button id ="myBtn" type="submit" onClick="valCan(ur.value, pc.value)"  class="btn btn-primary btn-lg">Continue</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- =======================      -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" width="640" height="670" frameborder="0" marginheight="0" marginwidth="0">
+    <span class="close">&times;</span>
+    <center>
+      <p>Welcome</p>
+    <p id="p1"></p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdHnSY5UKpLI4xTRQAY3LtjaNVO01BVrsmphxQUKPUdZ7MYag/viewform?embedded=true" width="640" height="670" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </center>
+  </div>
+
+</div>
+    <script src="scripts/min.js"></script>
+    <script>
+        document.addEventListener("contextmenu", function(e){
+        e.preventDefault();
+    }, false);
+        </script>
+</body>
+</html>
