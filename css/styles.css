@@ -89,3 +89,6 @@ form:before {
 .thick {
   font-weight: bold;
 }
+.mw{
+  min-width: 640;
+}
