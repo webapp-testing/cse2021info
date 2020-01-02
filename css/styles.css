@@ -83,3 +83,9 @@ form:before {
   text-decoration: none;
   cursor: pointer;
 } 
+.b {
+  font-style: italic;
+}
+.thick {
+  font-weight: bold;
+}
